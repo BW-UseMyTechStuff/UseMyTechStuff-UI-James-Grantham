@@ -16,6 +16,7 @@ h4,
 h5,
 h6,
 p,
+a,
 blockquote,
 pre,
 a,
@@ -89,6 +90,8 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-decoration: none;
+  color: black;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -125,6 +128,38 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: ;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.searchbar {
+  display: flex;
+  justify-content: center;
+}
+input {
+  border: 1px solid black;
+  width: 80%;
 }
 body,
 .conatiner,
