@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-evenly;
     margin: 20px auto;
-    color: @prim7;
 
     @media @mobileDevice {
         flex-direction: column;
@@ -15,6 +14,10 @@
         width: 18%;
         border: 1px solid black;
         text-align: center;
+
+        &:hover {
+            background-color: @prim5;
+        }
 
         @media @mobileDevice {
             width: 100%;
@@ -52,7 +55,7 @@
     background-color: @acce2;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 10px 0;
 
     @media @mobileDevice {
@@ -98,7 +101,7 @@
         margin-top: 10px;
         
         &:hover {
-            background-color: yellow;
+            background-color: @prim5;
         }
     }
 }

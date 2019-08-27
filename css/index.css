@@ -165,7 +165,6 @@ a {
   display: flex;
   justify-content: space-evenly;
   margin: 20px auto;
-  color: #e9b40a;
 }
 @media (max-width: 500px) {
   .menu {
@@ -179,6 +178,9 @@ a {
   width: 18%;
   border: 1px solid black;
   text-align: center;
+}
+.menu .category:hover {
+  background-color: #e97f0a;
 }
 @media (max-width: 500px) {
   .menu .category {
@@ -215,7 +217,7 @@ a {
   background-color: #084b27;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 10px 0;
 }
 @media (max-width: 500px) {
@@ -257,7 +259,7 @@ a {
   margin-top: 10px;
 }
 .advert-single .button:hover {
-  background-color: yellow;
+  background-color: #e97f0a;
 }
 .aboutteam {
   text-align: center;
@@ -297,6 +299,24 @@ a {
   .header {
     flex-direction: column;
     align-items: center;
+  }
+}
+.header .button {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-left: 10px;
+}
+.header .button:hover {
+  background-color: #e97f0a;
+}
+@media (max-width: 500px) {
+  .header .button {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
   }
 }
 .header .navigation {
@@ -344,21 +364,6 @@ a {
   padding: 1.5rem;
   height: 40px;
 }
-.header .button {
-  display: inline-block;
-  border: 1px solid black;
-  border-radius: 10px;
-  text-align: center;
-  padding: 1rem 2rem;
-  margin-left: 10px;
-}
-@media (max-width: 500px) {
-  .header .button {
-    width: 100%;
-    margin-top: 10px;
-    margin-left: 0;
-  }
-}
 .footer {
   display: flex;
   flex-direction: column;
@@ -371,4 +376,7 @@ a {
   margin: 10px auto;
   border: 1px solid black;
   border-radius: 10px;
+}
+.footer a:hover {
+  background-color: #e97f0a;
 }
