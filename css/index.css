@@ -214,7 +214,7 @@ a {
   }
 }
 .site-content {
-  background-color: #084b27;
+  background-color: #e96e0a;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -367,7 +367,7 @@ a {
 .footer {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 .footer a {
   width: 90%;
