@@ -1,0 +1,31 @@
+.aboutteam {
+    text-align: center;
+    padding: 40px;
+}
+
+.team {
+    display: flex;
+
+    @media @mobileDevice {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .person {
+        width: 25%;
+        padding: 5px;
+        border: 1px solid black;
+        margin-bottom: 20px;
+
+        @media @mobileDevice {
+            width: 80%;
+            
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+}

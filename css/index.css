@@ -146,18 +146,51 @@ h2 {
 }
 h3 {
   font-size: 1.8rem;
+  text-align: center;
+  padding: 10px;
 }
 h4 {
   font-size: 1.6rem;
 }
 p {
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 a {
   text-decoration: none;
   color: black;
   font-size: 1.5rem;
+}
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px auto;
+  color: #e9b40a;
+}
+@media (max-width: 500px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid black;
+  }
+}
+.menu .category {
+  padding: 10px;
+  width: 18%;
+  border: 1px solid black;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .menu .category {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+}
+.introduction {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid black;
 }
 @media (max-width: 500px) {
   .introduction {
@@ -166,6 +199,9 @@ a {
 }
 .fullwidth-images {
   display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
 }
 .fullwidth-images img {
   width: 33.333%;
@@ -175,17 +211,8 @@ a {
     display: none;
   }
 }
-.menu {
-  display: flex;
-  justify-content: space-evenly;
-}
-.menu .category {
-  padding: 10px;
-  width: 18%;
-  border: 1px solid black;
-  text-align: center;
-}
 .site-content {
+  background-color: #084b27;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -203,10 +230,9 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 24%;
-  background-color: #086a27;
+  background-color: white;
   border: 1px solid black;
   padding: 15px;
-  height: 450px;
 }
 @media (max-width: 500px) {
   .advert-single {
@@ -228,18 +254,46 @@ a {
   border: 1px solid black;
   text-align: center;
   padding: 10px;
+  margin-top: 10px;
 }
 .advert-single .button:hover {
   background-color: yellow;
+}
+.aboutteam {
+  text-align: center;
+  padding: 40px;
+}
+.team {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .team {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.team .person {
+  width: 25%;
+  padding: 5px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .team .person {
+    width: 80%;
+  }
+}
+.team .person img {
+  width: 100%;
 }
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: #e95a00;
-  padding: 10px 10PX;
+  padding: 10px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
   .header {
     flex-direction: column;
     align-items: center;
@@ -306,20 +360,15 @@ a {
   }
 }
 .footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.footer a {
   width: 90%;
   padding: 10px;
   text-align: center;
   margin: 10px auto;
+  border: 1px solid black;
   border-radius: 10px;
-}
-body,
-.conatiner,
-nav,
-div,
-header,
-section,
-footer {
-  border: 1px solid red;
-  padding: 2px;
-  margin: 2px;
 }
