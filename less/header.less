@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: beige;
+    background-color: @prim3;
     padding: 10px 10PX;
 
     @media @smallmonitor {
@@ -13,16 +13,18 @@
     .navigation {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
         width: 50%;
+        padding: 10px;
 
-        @media @smallmonitor {
+        @media @tabletDevice {
             width: 80%;
         }
 
         @media @mobileDevice {
             flex-direction: column;
             align-items: center;
+            width: 100%;
         }
     }
 
@@ -33,25 +35,39 @@
         padding: 10px;
         width: 50%;
 
-        @media @smallmonitor {
+        @media @tabletDevice {
             width: 80%;
+        }
+
+        @media @mobileDevice {
+            flex-direction: column;
+            align-items: center;
+            width:100%;
         }
         
         input {
             border: 1px solid black;
             border-radius: 10px;
             width: 100%;
-            padding: 10px;
+            padding: 1.5rem;
             height: 40px;
-            margin-right: 10px;
+            // margin: 10px;
         }
     
-        .searchButton {
-            border: 1px solid black;
-            border-radius: 10px;
-            text-align: center;
-            vertical-align: middle;
-            height: 40px;
+    }
+
+    .button {
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 10px;
+        text-align: center;
+        padding: 1rem 2rem;
+        margin-left: 10px;
+
+        @media @mobileDevice {
+            width: 100%;
+            margin-top: 10px;
+            margin-left: 0;
         }
     }
 
