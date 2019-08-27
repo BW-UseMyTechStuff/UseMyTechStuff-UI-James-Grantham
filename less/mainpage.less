@@ -1,0 +1,60 @@
+.site-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+
+    @media @mobileDevice {
+        flex-direction: column;
+    }
+}
+
+.fullwidth-images {
+    display: flex;
+    // align-items: stretch;
+    
+    img {
+        width: 33.333%;
+    }
+
+    @media @mobileDevice {
+        display: none;
+    }
+}
+
+
+
+
+.advert-single {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 24%;
+    background-color: aquamarine;
+    border: 1px solid black;
+    padding: 15px 5px;
+    height: 450px;
+
+    @media @mobileDevice {
+        width: 50%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .summary {
+        width: 100%;
+    }
+
+    .button {
+        width: 80%;
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+        
+        &:hover {
+            background-color: yellow;
+        }
+    }
+}
