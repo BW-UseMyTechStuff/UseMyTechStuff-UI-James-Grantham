@@ -206,9 +206,12 @@ a {
   border-bottom: 1px solid black;
   margin-bottom: 20px;
 }
-.fullwidth-images img {
-  width: 33.333%;
-  height: auto;
+.fullwidth-images figure {
+  width: 33.33%;
+}
+.fullwidth-images figure img {
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 500px) {
   .fullwidth-images {
