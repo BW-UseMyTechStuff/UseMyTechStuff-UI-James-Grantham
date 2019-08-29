@@ -140,7 +140,7 @@ table {
 }
 @media (max-width: 500px) {
   html {
-    font-size: 100%;
+    font-size: 90%;
   }
 }
 h1 {
